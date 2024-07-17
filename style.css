@@ -45,24 +45,33 @@ header {
     justify-content: space-between;
     align-items: end;
     padding: 1rem;
-
+    user-select: none;
 }
 
-.header-menu #icon {
-    font-size: 60px;
-}
+
 
 .header-menu div {
     margin: 0 1rem;
     padding: 0 2rem;
     margin-bottom: 0px;
     text-shadow: rgba(0, 242, 36, 1) 0px 0px 163px;
+    font-family: roboto;
+    font-size: 30px;
+}
+.header-menu .org-icon {
+    font-size: 55px;
     font-family: Bella-Bold;
-    font-size: 45px;
+    color: aqua;
+}
+.header-menu .suffix-icon{
+    font-size: 35px;
 }
 
 .menu {
     display: flex;
+}
+.menu div:hover {
+    color: aqua;
 }
 
 .screen {
@@ -88,19 +97,21 @@ header {
 
 .screen_intro .left_view {
     padding-left: 100px;
-    flex: 1 0 60%;
+    flex: 1 0 40%;
     height: 500;
+    font-family: Bella-Bold;
+    font-size: 30px;
 }
 
 .screen_intro .left_view p {
-    font-family: Roboto;
-    font-size: 25px;
+    font-family: Fira Sans;
+    font-size: 22px;
     background-image: radial-gradient(circle closest-corner at 50% 240%, #00f539, rgba(255, 255, 255, 0));
 
 }
 
 .screen_intro .right_view {
-    flex: 1 0 40%;
+    flex: 1 0 60%;
     height: 100px;
     filter: drop-shadow(rgba(0, 255, 255, 0.42));
 }
