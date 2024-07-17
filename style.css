@@ -20,12 +20,12 @@
 body,
 html {
     height: 100%;
-    margin: 0;
+    width: 100%;
     overflow: hidden;
     background-color: var(--background);
     color: var(--text);
     scroll-behavior: smooth;
-    box-sizing: 0;
+
 }
 
 
@@ -34,7 +34,7 @@ html {
 
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -78,7 +78,13 @@ header {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    width: 100vw;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
 }
+.screen::-webkit-scrollbar {
+    display: none;
+  }
 
 .screen section {
     height: 100vh;
@@ -97,7 +103,8 @@ header {
 
 .screen_intro .left_view {
     padding-left: 100px;
-    flex: 1 0 40%;
+    flex: 1;
+    width: 40%;
     height: 500;
     font-family: Bella-Bold;
     font-size: 30px;
@@ -111,7 +118,8 @@ header {
 }
 
 .screen_intro .right_view {
-    flex: 1 0 60%;
+    flex: 1;
+    width: 60%;
     height: 100px;
     filter: drop-shadow(rgba(0, 255, 255, 0.42));
 }
